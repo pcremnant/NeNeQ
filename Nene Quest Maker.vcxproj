@@ -154,6 +154,8 @@
     <ClInclude Include="define.h" />
     <ClInclude Include="DrawManager.h" />
     <ClInclude Include="MainMenuScene.h" />
+    <ClInclude Include="NenePlayer.h" />
+    <ClInclude Include="NeneStatus.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

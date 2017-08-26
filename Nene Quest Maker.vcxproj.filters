@@ -50,5 +50,11 @@
     <ClInclude Include="Timer.h">
       <Filter>소스 파일\Timer</Filter>
     </ClInclude>
+    <ClInclude Include="NenePlayer.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NeneStatus.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
