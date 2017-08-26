@@ -1,11 +1,15 @@
 #include"define.h"
 #include"CFramework.h"
-
+#include "Timer.h"
 CFramework framework;
 
 HINSTANCE g_hInst;
 LPCTSTR lpszClass = WIN_TITLE;
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam);
+
+CGameTimer g_GameTimer;
+_TCHAR g_pszBuffer[60];
+
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdParam, int nCmdShow)
 {
@@ -83,6 +87,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	switch (iMessage) {
 	case WM_CREATE:
 		SetTimer(hWnd, WT_UPDATE, UPDATE_FPS, NULL);
+		_tcscpy_s(g_pszBuffer, WIN_TITLE);
+
 		break;
 
 	case WM_MOUSEMOVE:
@@ -116,8 +122,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	case WM_TIMER:
 		switch (wParam) {
 		case WT_UPDATE:
+			g_GameTimer.Tick();
+			framework.Update(g_GameTimer.GetTimeElapsed());								//넘겨주는 인자는 time_t
 
-			framework.Update(NULL);								//넘겨주는 인자는 time_t
+			g_GameTimer.GetFrameRate(g_pszBuffer + WIN_TITLE_SIZE, 39);
+			::SetWindowText(hWnd, g_pszBuffer);
 
 			InvalidateRect(hWnd, NULL, FALSE);
 			break;

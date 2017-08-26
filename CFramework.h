@@ -45,7 +45,7 @@ public:
 	}
 
 	// 업데이트 함수
-	void Update(time_t t)
+	void Update(float t)
 	{
 		m_pCurrentScene->Update(t);
 	}

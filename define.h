@@ -8,6 +8,7 @@
 #include<atlimage.h>
 #include<list>
 
+
 using namespace std;
 
 //
@@ -15,10 +16,11 @@ using namespace std;
 #define CLIENT_WIDTH 800
 #define CLIENT_HEIGHT 600
 
-#define WIN_TITLE TEXT("Nene Quest")
+#define WIN_TITLE TEXT("Nene Quest (")
+#define WIN_TITLE_SIZE 12
 
 #define WT_UPDATE 0
-#define UPDATE_FPS (int)1000/60
+#define UPDATE_FPS ((int)1000/60)
 
 #define START_X 0
 #define START_Y 0

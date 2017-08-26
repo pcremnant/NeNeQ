@@ -8,5 +8,5 @@ public:
 	virtual void MouseMove(const LPARAM& lParam) = 0;
 	virtual void LButtonDowm(const LPARAM& lParam) = 0;
 	virtual void Draw(HDC hdc) = 0;
-	virtual void Update(time_t t) = 0;
+	virtual void Update(float t) = 0;
 };
