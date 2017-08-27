@@ -21,7 +21,7 @@
 // 가지고 있어야 할 변수
 // 스탯포인트, 스테이터스, 우미코(아오바) 포인트
 
-class NenePlayer {
+class NeneStatusManager {
 	NeneStatus* m_Status;					// 현재 스테이터스
 	NeneStatus m_BonusStatus;				// 우미코(아오바)를 통한 보너스 스테이터스
 	int m_nStatusPoint;						// 스테이터스 포인트
@@ -31,7 +31,7 @@ class NenePlayer {
 
 public:
 	// 생성자 - 변수들 초기화
-	NenePlayer()
+	NeneStatusManager()
 	{
 		m_nStatusPoint = 0;
 		m_Status = new NeneStatus();

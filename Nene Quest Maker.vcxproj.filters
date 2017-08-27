@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\Timer">
       <UniqueIdentifier>{66c288d7-dfb1-46a4-bb0e-d5e232d55cac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\CObject">
+      <UniqueIdentifier>{28bd7780-36e8-455c-acbd-a35db11bc2af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,10 +53,13 @@
     <ClInclude Include="Timer.h">
       <Filter>소스 파일\Timer</Filter>
     </ClInclude>
-    <ClInclude Include="NenePlayer.h">
+    <ClInclude Include="NeneStatus.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="NeneStatus.h">
+    <ClInclude Include="CObject.h">
+      <Filter>소스 파일\CObject</Filter>
+    </ClInclude>
+    <ClInclude Include="NeneStatusManager.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -150,11 +150,12 @@
   <ItemGroup>
     <ClInclude Include="CDrawInfo.h" />
     <ClInclude Include="CFramework.h" />
+    <ClInclude Include="CObject.h" />
     <ClInclude Include="CScene.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="DrawManager.h" />
     <ClInclude Include="MainMenuScene.h" />
-    <ClInclude Include="NenePlayer.h" />
+    <ClInclude Include="NeneStatusManager.h" />
     <ClInclude Include="NeneStatus.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
